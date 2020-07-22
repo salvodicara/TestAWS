@@ -1,0 +1,2956 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateTenant(
+  $input: CreateTenantInput!
+  $condition: ModelTenantConditionInput
+) {
+  createTenant(input: $input, condition: $condition) {
+    id
+    name
+    address1
+    address2
+    city
+    postcode
+    bucket
+    solutions {
+      items {
+        id
+        tenantID
+        name
+        versions {
+          items {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        link
+        ownerUser
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    users {
+      items {
+        id
+        tenantID
+        name
+        email
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        solo
+        memberships {
+          items {
+            id
+            userID
+            versionID
+            role
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        admin
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateTenant(
+  $input: UpdateTenantInput!
+  $condition: ModelTenantConditionInput
+) {
+  updateTenant(input: $input, condition: $condition) {
+    id
+    name
+    address1
+    address2
+    city
+    postcode
+    bucket
+    solutions {
+      items {
+        id
+        tenantID
+        name
+        versions {
+          items {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        link
+        ownerUser
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    users {
+      items {
+        id
+        tenantID
+        name
+        email
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        solo
+        memberships {
+          items {
+            id
+            userID
+            versionID
+            role
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        admin
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteTenant(
+  $input: DeleteTenantInput!
+  $condition: ModelTenantConditionInput
+) {
+  deleteTenant(input: $input, condition: $condition) {
+    id
+    name
+    address1
+    address2
+    city
+    postcode
+    bucket
+    solutions {
+      items {
+        id
+        tenantID
+        name
+        versions {
+          items {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        link
+        ownerUser
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    users {
+      items {
+        id
+        tenantID
+        name
+        email
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        solo
+        memberships {
+          items {
+            id
+            userID
+            versionID
+            role
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        admin
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateUser(
+  $input: CreateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  createUser(input: $input, condition: $condition) {
+    id
+    tenantID
+    name
+    email
+    tenant {
+      id
+      name
+      address1
+      address2
+      city
+      postcode
+      bucket
+      solutions {
+        items {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      users {
+        items {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    solo
+    memberships {
+      items {
+        id
+        userID
+        versionID
+        user {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        role
+        versionRecord {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    admin
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateUser(
+  $input: UpdateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  updateUser(input: $input, condition: $condition) {
+    id
+    tenantID
+    name
+    email
+    tenant {
+      id
+      name
+      address1
+      address2
+      city
+      postcode
+      bucket
+      solutions {
+        items {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      users {
+        items {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    solo
+    memberships {
+      items {
+        id
+        userID
+        versionID
+        user {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        role
+        versionRecord {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    admin
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteUser(
+  $input: DeleteUserInput!
+  $condition: ModelUserConditionInput
+) {
+  deleteUser(input: $input, condition: $condition) {
+    id
+    tenantID
+    name
+    email
+    tenant {
+      id
+      name
+      address1
+      address2
+      city
+      postcode
+      bucket
+      solutions {
+        items {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      users {
+        items {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    solo
+    memberships {
+      items {
+        id
+        userID
+        versionID
+        user {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        role
+        versionRecord {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    admin
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateUserVersion(
+  $input: CreateUserVersionInput!
+  $condition: ModelUserVersionConditionInput
+) {
+  createUserVersion(input: $input, condition: $condition) {
+    id
+    userID
+    versionID
+    user {
+      id
+      tenantID
+      name
+      email
+      tenant {
+        id
+        name
+        address1
+        address2
+        city
+        postcode
+        bucket
+        solutions {
+          items {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        users {
+          items {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      solo
+      memberships {
+        items {
+          id
+          userID
+          versionID
+          user {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          role
+          versionRecord {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      admin
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    role
+    versionRecord {
+      id
+      solutionID
+      fileID
+      name
+      ownerUser
+      file {
+        id
+        bucket
+        region
+        key
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      size
+      preview
+      version
+      archived
+      solution {
+        id
+        tenantID
+        name
+        versions {
+          items {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        link
+        ownerUser
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      members {
+        items {
+          id
+          userID
+          versionID
+          user {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          role
+          versionRecord {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateUserVersion(
+  $input: UpdateUserVersionInput!
+  $condition: ModelUserVersionConditionInput
+) {
+  updateUserVersion(input: $input, condition: $condition) {
+    id
+    userID
+    versionID
+    user {
+      id
+      tenantID
+      name
+      email
+      tenant {
+        id
+        name
+        address1
+        address2
+        city
+        postcode
+        bucket
+        solutions {
+          items {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        users {
+          items {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      solo
+      memberships {
+        items {
+          id
+          userID
+          versionID
+          user {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          role
+          versionRecord {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      admin
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    role
+    versionRecord {
+      id
+      solutionID
+      fileID
+      name
+      ownerUser
+      file {
+        id
+        bucket
+        region
+        key
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      size
+      preview
+      version
+      archived
+      solution {
+        id
+        tenantID
+        name
+        versions {
+          items {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        link
+        ownerUser
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      members {
+        items {
+          id
+          userID
+          versionID
+          user {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          role
+          versionRecord {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteUserVersion(
+  $input: DeleteUserVersionInput!
+  $condition: ModelUserVersionConditionInput
+) {
+  deleteUserVersion(input: $input, condition: $condition) {
+    id
+    userID
+    versionID
+    user {
+      id
+      tenantID
+      name
+      email
+      tenant {
+        id
+        name
+        address1
+        address2
+        city
+        postcode
+        bucket
+        solutions {
+          items {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        users {
+          items {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      solo
+      memberships {
+        items {
+          id
+          userID
+          versionID
+          user {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          role
+          versionRecord {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      admin
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    role
+    versionRecord {
+      id
+      solutionID
+      fileID
+      name
+      ownerUser
+      file {
+        id
+        bucket
+        region
+        key
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      size
+      preview
+      version
+      archived
+      solution {
+        id
+        tenantID
+        name
+        versions {
+          items {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        link
+        ownerUser
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      members {
+        items {
+          id
+          userID
+          versionID
+          user {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          role
+          versionRecord {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateSolution(
+  $input: CreateSolutionInput!
+  $condition: ModelSolutionConditionInput
+) {
+  createSolution(input: $input, condition: $condition) {
+    id
+    tenantID
+    name
+    versions {
+      items {
+        id
+        solutionID
+        fileID
+        name
+        ownerUser
+        file {
+          id
+          bucket
+          region
+          key
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        size
+        preview
+        version
+        archived
+        solution {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        members {
+          items {
+            id
+            userID
+            versionID
+            role
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    link
+    ownerUser
+    tenant {
+      id
+      name
+      address1
+      address2
+      city
+      postcode
+      bucket
+      solutions {
+        items {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      users {
+        items {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateSolution(
+  $input: UpdateSolutionInput!
+  $condition: ModelSolutionConditionInput
+) {
+  updateSolution(input: $input, condition: $condition) {
+    id
+    tenantID
+    name
+    versions {
+      items {
+        id
+        solutionID
+        fileID
+        name
+        ownerUser
+        file {
+          id
+          bucket
+          region
+          key
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        size
+        preview
+        version
+        archived
+        solution {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        members {
+          items {
+            id
+            userID
+            versionID
+            role
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    link
+    ownerUser
+    tenant {
+      id
+      name
+      address1
+      address2
+      city
+      postcode
+      bucket
+      solutions {
+        items {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      users {
+        items {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteSolution(
+  $input: DeleteSolutionInput!
+  $condition: ModelSolutionConditionInput
+) {
+  deleteSolution(input: $input, condition: $condition) {
+    id
+    tenantID
+    name
+    versions {
+      items {
+        id
+        solutionID
+        fileID
+        name
+        ownerUser
+        file {
+          id
+          bucket
+          region
+          key
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        size
+        preview
+        version
+        archived
+        solution {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        members {
+          items {
+            id
+            userID
+            versionID
+            role
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    link
+    ownerUser
+    tenant {
+      id
+      name
+      address1
+      address2
+      city
+      postcode
+      bucket
+      solutions {
+        items {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      users {
+        items {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateVersion(
+  $input: CreateVersionInput!
+  $condition: ModelVersionConditionInput
+) {
+  createVersion(input: $input, condition: $condition) {
+    id
+    solutionID
+    fileID
+    name
+    ownerUser
+    file {
+      id
+      bucket
+      region
+      key
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    size
+    preview
+    version
+    archived
+    solution {
+      id
+      tenantID
+      name
+      versions {
+        items {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      link
+      ownerUser
+      tenant {
+        id
+        name
+        address1
+        address2
+        city
+        postcode
+        bucket
+        solutions {
+          items {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        users {
+          items {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    members {
+      items {
+        id
+        userID
+        versionID
+        user {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        role
+        versionRecord {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateVersion(
+  $input: UpdateVersionInput!
+  $condition: ModelVersionConditionInput
+) {
+  updateVersion(input: $input, condition: $condition) {
+    id
+    solutionID
+    fileID
+    name
+    ownerUser
+    file {
+      id
+      bucket
+      region
+      key
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    size
+    preview
+    version
+    archived
+    solution {
+      id
+      tenantID
+      name
+      versions {
+        items {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      link
+      ownerUser
+      tenant {
+        id
+        name
+        address1
+        address2
+        city
+        postcode
+        bucket
+        solutions {
+          items {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        users {
+          items {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    members {
+      items {
+        id
+        userID
+        versionID
+        user {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        role
+        versionRecord {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteVersion(
+  $input: DeleteVersionInput!
+  $condition: ModelVersionConditionInput
+) {
+  deleteVersion(input: $input, condition: $condition) {
+    id
+    solutionID
+    fileID
+    name
+    ownerUser
+    file {
+      id
+      bucket
+      region
+      key
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    size
+    preview
+    version
+    archived
+    solution {
+      id
+      tenantID
+      name
+      versions {
+        items {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      link
+      ownerUser
+      tenant {
+        id
+        name
+        address1
+        address2
+        city
+        postcode
+        bucket
+        solutions {
+          items {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        users {
+          items {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    members {
+      items {
+        id
+        userID
+        versionID
+        user {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        role
+        versionRecord {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateS3ObjectFile(
+  $input: CreateS3ObjectFileInput!
+  $condition: ModelS3ObjectFileConditionInput
+) {
+  createS3ObjectFile(input: $input, condition: $condition) {
+    id
+    bucket
+    region
+    key
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateS3ObjectFile(
+  $input: UpdateS3ObjectFileInput!
+  $condition: ModelS3ObjectFileConditionInput
+) {
+  updateS3ObjectFile(input: $input, condition: $condition) {
+    id
+    bucket
+    region
+    key
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteS3ObjectFile(
+  $input: DeleteS3ObjectFileInput!
+  $condition: ModelS3ObjectFileConditionInput
+) {
+  deleteS3ObjectFile(input: $input, condition: $condition) {
+    id
+    bucket
+    region
+    key
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}

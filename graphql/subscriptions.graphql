@@ -1,0 +1,2902 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateTenant {
+  onCreateTenant {
+    id
+    name
+    address1
+    address2
+    city
+    postcode
+    bucket
+    solutions {
+      items {
+        id
+        tenantID
+        name
+        versions {
+          items {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        link
+        ownerUser
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    users {
+      items {
+        id
+        tenantID
+        name
+        email
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        solo
+        memberships {
+          items {
+            id
+            userID
+            versionID
+            role
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        admin
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateTenant {
+  onUpdateTenant {
+    id
+    name
+    address1
+    address2
+    city
+    postcode
+    bucket
+    solutions {
+      items {
+        id
+        tenantID
+        name
+        versions {
+          items {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        link
+        ownerUser
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    users {
+      items {
+        id
+        tenantID
+        name
+        email
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        solo
+        memberships {
+          items {
+            id
+            userID
+            versionID
+            role
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        admin
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteTenant {
+  onDeleteTenant {
+    id
+    name
+    address1
+    address2
+    city
+    postcode
+    bucket
+    solutions {
+      items {
+        id
+        tenantID
+        name
+        versions {
+          items {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        link
+        ownerUser
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    users {
+      items {
+        id
+        tenantID
+        name
+        email
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        solo
+        memberships {
+          items {
+            id
+            userID
+            versionID
+            role
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        admin
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateUser {
+  onCreateUser {
+    id
+    tenantID
+    name
+    email
+    tenant {
+      id
+      name
+      address1
+      address2
+      city
+      postcode
+      bucket
+      solutions {
+        items {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      users {
+        items {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    solo
+    memberships {
+      items {
+        id
+        userID
+        versionID
+        user {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        role
+        versionRecord {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    admin
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateUser {
+  onUpdateUser {
+    id
+    tenantID
+    name
+    email
+    tenant {
+      id
+      name
+      address1
+      address2
+      city
+      postcode
+      bucket
+      solutions {
+        items {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      users {
+        items {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    solo
+    memberships {
+      items {
+        id
+        userID
+        versionID
+        user {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        role
+        versionRecord {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    admin
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteUser {
+  onDeleteUser {
+    id
+    tenantID
+    name
+    email
+    tenant {
+      id
+      name
+      address1
+      address2
+      city
+      postcode
+      bucket
+      solutions {
+        items {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      users {
+        items {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    solo
+    memberships {
+      items {
+        id
+        userID
+        versionID
+        user {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        role
+        versionRecord {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    admin
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateUserVersion {
+  onCreateUserVersion {
+    id
+    userID
+    versionID
+    user {
+      id
+      tenantID
+      name
+      email
+      tenant {
+        id
+        name
+        address1
+        address2
+        city
+        postcode
+        bucket
+        solutions {
+          items {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        users {
+          items {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      solo
+      memberships {
+        items {
+          id
+          userID
+          versionID
+          user {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          role
+          versionRecord {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      admin
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    role
+    versionRecord {
+      id
+      solutionID
+      fileID
+      name
+      ownerUser
+      file {
+        id
+        bucket
+        region
+        key
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      size
+      preview
+      version
+      archived
+      solution {
+        id
+        tenantID
+        name
+        versions {
+          items {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        link
+        ownerUser
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      members {
+        items {
+          id
+          userID
+          versionID
+          user {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          role
+          versionRecord {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateUserVersion {
+  onUpdateUserVersion {
+    id
+    userID
+    versionID
+    user {
+      id
+      tenantID
+      name
+      email
+      tenant {
+        id
+        name
+        address1
+        address2
+        city
+        postcode
+        bucket
+        solutions {
+          items {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        users {
+          items {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      solo
+      memberships {
+        items {
+          id
+          userID
+          versionID
+          user {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          role
+          versionRecord {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      admin
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    role
+    versionRecord {
+      id
+      solutionID
+      fileID
+      name
+      ownerUser
+      file {
+        id
+        bucket
+        region
+        key
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      size
+      preview
+      version
+      archived
+      solution {
+        id
+        tenantID
+        name
+        versions {
+          items {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        link
+        ownerUser
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      members {
+        items {
+          id
+          userID
+          versionID
+          user {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          role
+          versionRecord {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteUserVersion {
+  onDeleteUserVersion {
+    id
+    userID
+    versionID
+    user {
+      id
+      tenantID
+      name
+      email
+      tenant {
+        id
+        name
+        address1
+        address2
+        city
+        postcode
+        bucket
+        solutions {
+          items {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        users {
+          items {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      solo
+      memberships {
+        items {
+          id
+          userID
+          versionID
+          user {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          role
+          versionRecord {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      admin
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    role
+    versionRecord {
+      id
+      solutionID
+      fileID
+      name
+      ownerUser
+      file {
+        id
+        bucket
+        region
+        key
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      size
+      preview
+      version
+      archived
+      solution {
+        id
+        tenantID
+        name
+        versions {
+          items {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        link
+        ownerUser
+        tenant {
+          id
+          name
+          address1
+          address2
+          city
+          postcode
+          bucket
+          solutions {
+            nextToken
+            startedAt
+          }
+          users {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      members {
+        items {
+          id
+          userID
+          versionID
+          user {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          role
+          versionRecord {
+            id
+            solutionID
+            fileID
+            name
+            ownerUser
+            size
+            preview
+            version
+            archived
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateSolution {
+  onCreateSolution {
+    id
+    tenantID
+    name
+    versions {
+      items {
+        id
+        solutionID
+        fileID
+        name
+        ownerUser
+        file {
+          id
+          bucket
+          region
+          key
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        size
+        preview
+        version
+        archived
+        solution {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        members {
+          items {
+            id
+            userID
+            versionID
+            role
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    link
+    ownerUser
+    tenant {
+      id
+      name
+      address1
+      address2
+      city
+      postcode
+      bucket
+      solutions {
+        items {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      users {
+        items {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateSolution {
+  onUpdateSolution {
+    id
+    tenantID
+    name
+    versions {
+      items {
+        id
+        solutionID
+        fileID
+        name
+        ownerUser
+        file {
+          id
+          bucket
+          region
+          key
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        size
+        preview
+        version
+        archived
+        solution {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        members {
+          items {
+            id
+            userID
+            versionID
+            role
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    link
+    ownerUser
+    tenant {
+      id
+      name
+      address1
+      address2
+      city
+      postcode
+      bucket
+      solutions {
+        items {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      users {
+        items {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteSolution {
+  onDeleteSolution {
+    id
+    tenantID
+    name
+    versions {
+      items {
+        id
+        solutionID
+        fileID
+        name
+        ownerUser
+        file {
+          id
+          bucket
+          region
+          key
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        size
+        preview
+        version
+        archived
+        solution {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        members {
+          items {
+            id
+            userID
+            versionID
+            role
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    link
+    ownerUser
+    tenant {
+      id
+      name
+      address1
+      address2
+      city
+      postcode
+      bucket
+      solutions {
+        items {
+          id
+          tenantID
+          name
+          versions {
+            nextToken
+            startedAt
+          }
+          link
+          ownerUser
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      users {
+        items {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateVersion {
+  onCreateVersion {
+    id
+    solutionID
+    fileID
+    name
+    ownerUser
+    file {
+      id
+      bucket
+      region
+      key
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    size
+    preview
+    version
+    archived
+    solution {
+      id
+      tenantID
+      name
+      versions {
+        items {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      link
+      ownerUser
+      tenant {
+        id
+        name
+        address1
+        address2
+        city
+        postcode
+        bucket
+        solutions {
+          items {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        users {
+          items {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    members {
+      items {
+        id
+        userID
+        versionID
+        user {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        role
+        versionRecord {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateVersion {
+  onUpdateVersion {
+    id
+    solutionID
+    fileID
+    name
+    ownerUser
+    file {
+      id
+      bucket
+      region
+      key
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    size
+    preview
+    version
+    archived
+    solution {
+      id
+      tenantID
+      name
+      versions {
+        items {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      link
+      ownerUser
+      tenant {
+        id
+        name
+        address1
+        address2
+        city
+        postcode
+        bucket
+        solutions {
+          items {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        users {
+          items {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    members {
+      items {
+        id
+        userID
+        versionID
+        user {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        role
+        versionRecord {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteVersion {
+  onDeleteVersion {
+    id
+    solutionID
+    fileID
+    name
+    ownerUser
+    file {
+      id
+      bucket
+      region
+      key
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    size
+    preview
+    version
+    archived
+    solution {
+      id
+      tenantID
+      name
+      versions {
+        items {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        nextToken
+        startedAt
+      }
+      link
+      ownerUser
+      tenant {
+        id
+        name
+        address1
+        address2
+        city
+        postcode
+        bucket
+        solutions {
+          items {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        users {
+          items {
+            id
+            tenantID
+            name
+            email
+            solo
+            admin
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          nextToken
+          startedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    members {
+      items {
+        id
+        userID
+        versionID
+        user {
+          id
+          tenantID
+          name
+          email
+          tenant {
+            id
+            name
+            address1
+            address2
+            city
+            postcode
+            bucket
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          solo
+          memberships {
+            nextToken
+            startedAt
+          }
+          admin
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        role
+        versionRecord {
+          id
+          solutionID
+          fileID
+          name
+          ownerUser
+          file {
+            id
+            bucket
+            region
+            key
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          size
+          preview
+          version
+          archived
+          solution {
+            id
+            tenantID
+            name
+            link
+            ownerUser
+            _version
+            _deleted
+            _lastChangedAt
+            createdAt
+            updatedAt
+          }
+          members {
+            nextToken
+            startedAt
+          }
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateS3ObjectFile {
+  onCreateS3ObjectFile {
+    id
+    bucket
+    region
+    key
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateS3ObjectFile {
+  onUpdateS3ObjectFile {
+    id
+    bucket
+    region
+    key
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteS3ObjectFile {
+  onDeleteS3ObjectFile {
+    id
+    bucket
+    region
+    key
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}

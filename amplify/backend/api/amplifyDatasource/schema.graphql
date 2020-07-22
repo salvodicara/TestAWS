@@ -1,0 +1,75 @@
+type Tenant @model
+{
+  id: ID!
+  name: String!
+  address1: String!
+  address2: String
+  city: String!
+  postcode: String!
+  bucket: String # -- Not needed maybe delete later
+  solutions: [Solution] @connection(keyName: "byTenantSol", fields: ["id"])
+  users: [User] @connection(keyName: "byTenantUser", fields: ["id"])
+}
+type User @model
+
+  @key(name: "byTenantUser", fields: ["tenantID"]){
+
+  id: ID!
+  tenantID: ID!
+  name: String!
+  email: String!
+  tenant: Tenant @connection(fields: ["tenantID"])
+  solo: Boolean # used for users with no team that they sign up from device directly - tenantID will autogenerate and be random
+  memberships: [UserVersion] @connection(keyName: "byUserVersion", fields: ["id"])
+  admin: Boolean
+}
+# Join model (table) and queries are null
+# Access with User.memberships and Version.members
+type UserVersion @model(queries: null)
+  @key(name: "byUserVersion", fields: ["userID", "versionID"])
+  @key(name: "byVersionUser", fields: ["versionID", "userID"]){
+  id: ID!
+  userID: ID!
+  versionID: ID!
+  user: User @connection(fields: ["userID"])
+  role: Role # Role of the added user
+  versionRecord: Version @connection(fields: ["versionID"])
+}
+type Solution @model
+ @key(name: "byTenantSol", fields: ["tenantID"]) {
+  id: ID!
+  tenantID: ID! # Optional a User might be standalone
+  name: String!
+  versions: [Version!] @connection(keyName: "bySolutionVersions", fields: ["id"])
+  # This will be the ARN for the item in the tenant bucket
+  link: String # -- Not needed maybe delete later
+  ownerUser: String!
+  tenant: Tenant! @connection(fields: ["tenantID"])
+}
+type Version @model @versioned
+  @key(name: "bySolutionVersions", fields: ["solutionID"]) {
+  id: ID!
+  solutionID: ID!
+  fileID: ID!
+  name: String!
+  ownerUser: String!
+  file: S3ObjectFile @connection(fields: ["fileID"])
+  size: Int
+  preview: String
+  version: Int!
+  archived: Boolean # Instead of deleting hide it from the user
+  solution: Solution! @connection(fields: ["solutionID"])
+  members: [UserVersion]! @connection(keyName: "byVersionUser", fields: ["id"])
+}
+type S3ObjectFile @model {
+  id: ID!
+  bucket: String
+  region: String
+  key: String
+}
+enum Role {
+  TESTER
+  ADMIN
+  VIEWER
+  EDITOR
+}

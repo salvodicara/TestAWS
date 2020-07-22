@@ -8,6 +8,8 @@
 
 import UIKit
 import SwiftUI
+import Amplify
+import AmplifyPlugins
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -29,6 +31,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             window.makeKeyAndVisible()
         }
+        
+        getUsers()
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -58,7 +63,32 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
+    func getUsers(){
+        let userEmail = "salvatore@cothamtechnologies.com"
+        let predicate = User.keys.email == userEmail
+        _ = Amplify.API.query(request: .list(User.self, where: predicate)){ event in
+            switch event {
+            case .success(let result):
+                switch result {
+                case .success(let users):
+                    //successfully retrieved list of users
+                    for user in users {
+                        print("handleActionListFilesGQL: user.email = " + user.email)
+                        
+                        guard let vRName = user.memberships?[0].versionRecord?.name else{
+                            return
+                        }
+                        print("VERSION RECORD NAME: \(vRName)")
+                        //observer.onNext(user.memberships!)
+                    }
+                case .failure(let error):
+                    print("handleActionListFilesGQL: error = " + error.localizedDescription)
+                }
+            case .failure(let error):
+                print("handleActionListFilesGQL: error = " + error.localizedDescription)
+            }
+        }
+    }
 
 }
 
