@@ -64,7 +64,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
     func getUsers(){
-        let userEmail = "salvatore@cothamtechnologies.com"
+        let userEmail = "dummy@email.com"
         let predicate = User.keys.email == userEmail
         _ = Amplify.API.query(request: .list(User.self, where: predicate)){ event in
             switch event {
